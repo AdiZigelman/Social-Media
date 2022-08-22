@@ -1,6 +1,5 @@
 # Social-Media
 
-How to compile:
 Folder Server:
 1) Reactor:
 - mvn clean
