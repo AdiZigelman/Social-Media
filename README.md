@@ -2,12 +2,12 @@
 
 How to compile:
 - folder Server:
-Reactor:
+1) Reactor:
 mvn clean
 mvn compile
 mvn exec:java -Dexec.mainClass="bgu.spl.net.impl.BGSServer.ReactorMain" -Dexec.args="7777 5"
 
-TPC:
+2) TPC:
 mvn clean
 mvn compile
 mvn exec:java -Dexec.mainClass="bgu.spl.net.impl.BGSServer.TPCMain" -Dexec.args=7777
