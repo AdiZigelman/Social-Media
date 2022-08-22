@@ -1,6 +1,7 @@
 # Social-Media
 
-folder Server:
+How to compile:
+Folder Server:
 1) Reactor:
 - mvn clean
 - mvn compile
@@ -11,7 +12,7 @@ folder Server:
 - mvn compile
 - mvn exec:java -Dexec.mainClass="bgu.spl.net.impl.BGSServer.TPCMain" -Dexec.args=7777
 
-folder Client:
+Folder Client:
 - make
 - cd bin
 - ./BGRSclient 127.0.0.1 7777
