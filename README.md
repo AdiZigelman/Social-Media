@@ -3,19 +3,19 @@
 How to compile:
 - folder Server:
 1) Reactor:
-mvn clean
-mvn compile
-mvn exec:java -Dexec.mainClass="bgu.spl.net.impl.BGSServer.ReactorMain" -Dexec.args="7777 5"
+- mvn clean
+- mvn compile
+- mvn exec:java -Dexec.mainClass="bgu.spl.net.impl.BGSServer.ReactorMain" -Dexec.args="7777 5"
 
 2) TPC:
-mvn clean
-mvn compile
-mvn exec:java -Dexec.mainClass="bgu.spl.net.impl.BGSServer.TPCMain" -Dexec.args=7777
+- mvn clean
+- mvn compile
+- mvn exec:java -Dexec.mainClass="bgu.spl.net.impl.BGSServer.TPCMain" -Dexec.args=7777
 
 - folder Client:
-make
-cd bin
-./BGRSclient 127.0.0.1 7777
+- make
+- cd bin
+- ./BGRSclient 127.0.0.1 7777
 
 
 
