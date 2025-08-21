@@ -27,10 +27,8 @@ void KeyboardReader::operator()() {
             input.push_back(word);
         }
         // translate short to byte array
-        //char opCodeBytes[2];
         string opCode = opCodes[input.at(0)];
         const char *op_bytes = opCode.c_str();
-        //shortToBytes(opCode,opCodeBytes);
         int begin_index = 0;
         if (opCode == "01") {
             string username = input.at(1);
@@ -51,7 +49,6 @@ void KeyboardReader::operator()() {
             connectionHandler.sendBytes(message,begin_index);
         }
         else if (opCode == "06"){
-            //Need to fix time shit
             string username = input.at(1);
             string content = extractContent(input,2) + getTime().substr(0,10);
             string date = getTime();

@@ -12,7 +12,7 @@ public class BidiMessagingProtocolImpl <T> implements BidiMessagingProtocol<T>{
     private int connectionId;
 
 
-    public void BidiMessagingProtocolImpl(){
+    public BidiMessagingProtocolImpl(){
         shouldTerminate = false;
         dataBase = DataBase.getInstance();
     }

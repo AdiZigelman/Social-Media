@@ -15,11 +15,7 @@ public class MessageEncoderDecoderImpl<T> implements MessageEncoderDecoder<T>{
     @Override
     public T decodeNextByte(byte nextByte) {
         String finalAns = "";
-//        if (nextByte == '\0'){
-//            finalAns += popString() + "\0";
-//        }
         if (nextByte == ';') {
-            //return (T)finalAns;
             return (T)popString();
         }
         else {
